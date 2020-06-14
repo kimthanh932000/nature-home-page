@@ -1,0 +1,40 @@
+.header {
+	padding: 5rem 12rem;
+	//z-index: 2;
+
+	.logo {
+		font-size: 3rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		display: inline-block;
+		a {
+			color: $color-yellow;
+		}
+	}
+	.navigation {
+		display: inline-block;
+		float: right;
+		z-index: 9999;
+
+		&__list {
+			list-style: none;
+			color: $color-white;
+			font-size: 1.8rem;
+			text-transform: uppercase;
+		}
+		&__item {
+			display: inline-block;
+
+			&:not(:last-child) {
+				margin-right: 5rem;
+			}
+			&-link {
+				transition: color .5s;
+
+				&:hover {
+					color: $color-yellow;
+				}
+			}
+		}
+	}
+}
